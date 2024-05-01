@@ -1,0 +1,5 @@
+﻿/.vs
+*.obj
+[Bb]in
+__pycache__
+imports/__pycache__

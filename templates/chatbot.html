@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>URJA Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>URJA Assistant</h1>
+        </div>
+        <div id="chat-container">
+            <div id="chat-log">
+                <div class="message"><strong>Assistant:</strong> {{ initial_message }}</div>
+                <div class="options">
+                    <button class="btn" id="dl-btn">Driving Licence</button>
+                    <button class="btn" id="rc-btn">Registration Certificate</button>
+                </div>
+            </div>
+            <div id="input-container">
+                <input type="text" id="user-input" placeholder="Type your message..." maxlength="20">
+                <button class="btn" id="clear-btn">Clear</button>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
